@@ -6,7 +6,7 @@
  yarn bilidanmaku-parser
 ```
 
-## Usage
+## 使用
 
 ```
  import Danmaku from 'bilidanmaku-parser'
