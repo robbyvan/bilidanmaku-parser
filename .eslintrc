@@ -1,0 +1,12 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "html"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "semi": ["error", "always"],
+    "no-new": "off",
+    "comma-dangle": ["error","only-multiline"]
+  }
+}
