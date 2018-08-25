@@ -8,12 +8,21 @@
 
 ## 使用
 
-```
- import Danmaku from 'bilidanmaku-parser'
- let danmu = new Danmaku(rawJson, handler)
+```js
+ import Danmaku from 'bilidanmaku-parser';
+ const danmu = new Danmaku(rawJson, handler, truncateTime);
+ /* 
+ ** Params
+ ** // b站原始弹幕数据
+ ** rawJson: Object
+ ** // callback. 处理当前时刻下的弹幕:currentDanmu, 其对应的index为currentDanmuIndex
+ ** handler: hanlder({ currentDanmu, currentDanmuIndex })
+ ** // 过滤时间点, 使原始弹幕只剩下包含在指定的时间之前的弹幕
+ ** truncateTime: number 
+ **/
 
  function hanlder({ currentDanmu, currentDanmuIndex }){
-   // 对当前弹幕(currentDanmu)进行的操作
+   // 在这里对当前弹幕(currentDanmu) 进行操作
  }
 ```
 

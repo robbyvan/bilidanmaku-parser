@@ -10,7 +10,7 @@ module.exports = {
   entry: './src/index',
   output: {
     path: resolve('dist'),
-    filename: 'danmaku.js',
+    filename: 'danmaku.dev.js',
     library: 'Danmaku',
     libraryTarget: 'umd',
     publicPath: '/assets/'
