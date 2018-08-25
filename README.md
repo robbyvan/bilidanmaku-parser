@@ -14,15 +14,15 @@ import Danmaku from 'bilidanmaku-parser';
 ** Params
 ** // b站原始弹幕数据
 ** rawJson: Object
-** // callback. 处理当前时刻下的弹幕:currentDanmu, 其对应的index为currentDanmuIndex
-** handler: hanlder({ currentDanmu, currentDanmuIndex })
+** // callback. 处理当前时刻下的弹幕:item, 其对应的在this.danmu[]中的索引为index
+** handler: hanlder({ item, index })
 ** // 过滤时间点, 使原始弹幕只剩下包含在指定的时间之前的弹幕
 ** truncateTime: number 
 **/
 
 const danmu = new Danmaku(rawJson, handler, truncateTime);
-function hanlder({ currentDanmu, currentDanmuIndex }){
-   // 在这里对当前弹幕(currentDanmu) 进行操作
+function hanlder({ item, index }){
+   // 在这里对当前弹幕(item) 进行操作
  }
 ```
 
