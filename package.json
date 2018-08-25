@@ -2,8 +2,12 @@
   "name": "bilidanmaku-parser",
   "version": "1.0.0",
   "description": "A parser for bilibili danmaku.",
-  "main": "dist/index.js",
+  "main": "dist/danmaku.js",
   "author": "Robby",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbyvan/bilidanmaku-parser.git"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --config build/webpack.dev.js",
